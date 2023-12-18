@@ -6,6 +6,31 @@ Reference implementation of CTA simulation model parameters consisting of:
 - [verified_model](verified_model) parameters. Parameters are verified using above schema.
 - [validated_model](validated_model) parameters. Parameters are used in [simtools](https://github.com/gammasim/simtools).
 
+## Verified and Validated Model
+
+The verified model consists of a set of json or yaml files verified to follow the corresponding schema file. The simtools application `simtools-validate-file-using-schema` is used for the verification.
+
+Validated parameters are used in successfully in [simtools](https://github.com/gammasim/simtools) (this needs to be documented). 
+Parameters which are validated can be submitted to the simulation model database.
+
+### Implementation
+
+A typical model files includes:
+
+```yaml
+value:
+type:
+unit:
+version:
+metadata: { }
+```
+
+The `value` field contains the actual value of the parameter or points towards a data file (e.g., an astropy table in ecsv format).
+
+### Subdivision of model files for telescope types and sites
+
+Model parameter files are sorted according to the telescope type and site (e.g., MSTN includes all model parameters relevant for the MST on the Northern site). The [Default](validated_model/Default) directory contains all model parameters with their default values.
+
 ## Schema files
 
 Schema files describe simulation model parameters including (among others fields) name, type, format, applicable telescopes, and parameter description.
@@ -129,29 +154,4 @@ Describes the source of the data or parameter (e.g., *Calibration*)
 ### Simulation software description
 
 Describes the simulation software (e.g., *sim_telarray* or *corsika*) the parameter is used for.
-
-## Verified and Validated Model
-
-The verified model consists of a set of json or yaml files verified to follow the corresponding schema file. The simtools application `simtools-validate-file-using-schema` is used for the verification.
-
-Validated parameters are used in successfully in [simtools](https://github.com/gammasim/simtools) (this needs to be documented). 
-Parameters which are validated can be submitted to the simulation model database.
-
-### Implementation
-
-A typical model files includes:
-
-```yaml
-value:
-type:
-unit:
-version:
-metadata: { }
-```
-
-The `value` field contains the actual value of the parameter or points towards a data file (e.g., an astropy table in ecsv format).
-
-### Subdivision of model files for telescope types and sites
-
-Model parameter files are sorted according to the telescope type and site (e.g., MSTN includes all model parameters relevant for the MST on the Northern site). The [Default](validated_model/Default) directory contains all model parameters with their default values.
 
