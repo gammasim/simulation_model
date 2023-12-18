@@ -10,7 +10,7 @@ Reference implementation of CTA simulation model parameters consisting of:
 
 The verified model consists of a set of json or yaml files verified to follow the corresponding schema file. The simtools application `simtools-validate-file-using-schema` is used for the verification.
 
-Validated parameters are used in successfully in [simtools](https://github.com/gammasim/simtools) (this needs to be documented). 
+Validated parameters are used successfully in [simtools](https://github.com/gammasim/simtools) (this needs to be documented). 
 Parameters which are validated can be submitted to the simulation model database.
 
 ### Implementation
