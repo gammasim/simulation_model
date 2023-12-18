@@ -137,7 +137,7 @@ The verified model consists of a set of json or yaml files verified to follow th
 Validated parameters are used in successfully in [simtools](https://github.com/gammasim/simtools) (this needs to be documented). 
 Parameters which are validated can be submitted to the simulation model database.
 
-## Implementation
+### Implementation
 
 A typical model files includes:
 
@@ -150,3 +150,8 @@ metadata: { }
 ```
 
 The `value` field contains the actual value of the parameter or points towards a data file (e.g., an astropy table in ecsv format).
+
+### Subdivision of model files for telescope types and sites
+
+Model parameter files are sorted according to the telescope type and site (e.g., MSTN includes all model parameters relevant for the MST on the Northern site). The [Default](validated_model/Default) directory contains all model parameters with their default values.
+
