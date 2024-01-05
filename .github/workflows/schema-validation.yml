@@ -19,9 +19,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Validate schema files
+      - name: Validate parameter files.
         run: |
-          for file in $(ls schemas/*.schema.yml); do
+          FILES=$(find ./verified_model -name "*.json")
+          for file in $FILES
             PARAM=basename $file .schema.yml
             simtools-validate-file-using-schema \
             --file_name $file \
