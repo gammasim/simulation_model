@@ -39,7 +39,7 @@ They also include information about setting and validation activities, data sour
 The schema files and especially the model parameter descriptions are derived from (and planned to be synchronized with) the [sim_telarray manual](https://www.mpi-hd.mpg.de/hfm/~bernlohr/sim_telarray/).
 
 The files are in human readable yaml format and follow a fixed [json-schema](https://json-schema.org/).
-The full description of the schema is in [meta_schema/jsonschema.yml](meta_schema/jsonschema.yml).
+The full description of the schema is in [data.metaschema.yml](https://github.com/gammasim/simtools/blob/main/simtools/schemas/data.metaschema.yml) (found in simtools meta_schema directory).
 
 ### Typical Example
 
