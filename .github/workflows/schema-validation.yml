@@ -26,7 +26,7 @@ jobs:
       - name: Validate parameter files.
         run: |
           for file in $(find verified_model -name "*.json"); do
-            PARAM=$(basename $file .schema.yml)
+            PARAM=$(basename $file .json)
             echo "TESTING $file on $PARAM"
             simtools-validate-file-using-schema \
             --file_name $file \
