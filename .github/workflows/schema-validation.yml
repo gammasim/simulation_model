@@ -1,0 +1,33 @@
+---
+name: Parameter file validation
+# Validate parameter files against their schema.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  schema-validation:
+    runs-on: ubuntu-latest
+    container: ghcr.io/gammasim/simtools-prod:latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Validate schema files
+        run: |
+          for file in $(ls schemas/*.schema.yml); do
+            PARAM=basename $file .schema.yml
+            simtools-validate-file-using-schema \
+            --file_name $file \
+            --schema schema/$PARAM.schema.yml
+          done
+
+      - name: Validate metadata.
+        run: |
+          echo "Validating metadata files."
