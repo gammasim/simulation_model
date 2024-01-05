@@ -30,7 +30,8 @@ jobs:
             echo "TESTING $file on $PARAM"
             simtools-validate-file-using-schema \
             --file_name $file \
-            --schema schema/$PARAM.schema.yml
+            --schema schema/$PARAM.schema.yml \
+            --log_level DEBUG
           done
 
       - name: Validate metadata.
