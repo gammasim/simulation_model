@@ -23,7 +23,8 @@ jobs:
         run: |
           FILES=$(find ./verified_model -name "*.json")
           for file in $FILES
-            PARAM=basename $file .schema.yml
+            PARAM=$(basename $file .schema.yml)
+            echo "TESTING $file on $PARAM"
             simtools-validate-file-using-schema \
             --file_name $file \
             --schema schema/$PARAM.schema.yml
