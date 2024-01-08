@@ -37,11 +37,24 @@ jobs:
         run: |
           for file in $(find verified_model -name "*.json"); do
             PARAM=$(basename $file .json)
-            echo "Testing parameter $file on $PARAM"
+            echo "Testing parameter $file"
             # TODO - required updated to run without
             # explicity setting of schema
             simtools-validate-file-using-schema \
             --file_name $file \
             --schema schema/$PARAM.schema.yml \
+            --log_level DEBUG
+          done
+
+      - name: Validate metadata in parameter files.
+        run: |
+          for file in $(find verified_model -name "*.json"); do
+            PARAM=$(basename $file .json)
+            echo "Testing metadata for parameter $file"
+            # TODO - required updated to run without
+            # explicity setting of schema
+            simtools-validate-file-using-schema \
+            --file_name $file \
+            --validate_metadata \
             --log_level DEBUG
           done
