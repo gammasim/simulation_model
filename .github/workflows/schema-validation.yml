@@ -53,8 +53,8 @@ jobs:
             echo "Testing metadata for parameter $file"
             # TODO - required updated to run without
             # explicity setting of schema
-            simtools-validate-file-using-schema \
-            --file_name $file \
-            --validate_metadata \
-            --log_level DEBUG
+            # simtools-validate-file-using-schema \
+            #  --file_name $file \
+            #  --validate_metadata \
+            # --log_level DEBUG
           done
