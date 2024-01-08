@@ -7,10 +7,9 @@ base_schema_url: https://raw.githubusercontent.com/gammasim/simtools/main/simtoo
 base_schema_version: 0.1.0
 name: altitude
 description: |-
-  Altitude above sea level of site centre.
-  Telescope z-positions are defined relative to this level
-  (taking `telescope_axes_height` into account).
-short_description: Altitude above sea level of site centre.
+  Altitude above sea level of central reference point.
+  Telescope z-positions are defined relative to this level.
+short_description: Altitude above sea level of central reference point.
 data:
   - type: double
     units: m
