@@ -27,10 +27,8 @@ jobs:
         run: |
           for file in $(find schema -name "*.yml"); do
             echo "Testing schema $file"
-            # TODO - required updated simtools application
-            # to work without explicity schema file name
-            #            simtools-validate-file-using-schema \
-            #  --file_name $file
+            simtools-validate-file-using-schema \
+              --file_name $file
           done
 
       - name: Validate parameter files.
@@ -38,11 +36,8 @@ jobs:
           for file in $(find verified_model -name "*.json"); do
             PARAM=$(basename $file .json)
             echo "Testing parameter $file"
-            # TODO - required updated to run without
-            # explicity setting of schema
             simtools-validate-file-using-schema \
             --file_name $file \
-            --schema schema/$PARAM.schema.yml \
             --log_level DEBUG
           done
 
@@ -51,10 +46,8 @@ jobs:
           for file in $(find verified_model -name "*.json"); do
             PARAM=$(basename $file .json)
             echo "Testing metadata for parameter $file"
-            # TODO - required updated to run without
-            # explicity setting of schema
-            # simtools-validate-file-using-schema \
-            #  --file_name $file \
-            #  --validate_metadata \
-            # --log_level DEBUG
+            simtools-validate-file-using-schema \
+              --file_name $file \
+              --validate_metadata \
+              --log_level DEBUG
           done
