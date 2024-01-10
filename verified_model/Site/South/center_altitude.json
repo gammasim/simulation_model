@@ -23,9 +23,9 @@
                     "LEVEL": "R1",
                     "TYPE": "Service",
                     "MODEL": {
-                        "NAME": "altitude",
+                        "NAME": "center_altitude",
                         "VERSION": "0.1.0",
-                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/site-parameters/schema/altitude.schema.yml"
+                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/site-parameters/schema/center_altitude.schema.yml"
                     }
                 },
                 "FORMAT": "json",
