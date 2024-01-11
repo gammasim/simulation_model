@@ -1,0 +1,56 @@
+---
+name: Parameter file validation
+# Validate schema files against their metaschema.
+# Validate parameter files against their schema.
+# This workflow is to support developers.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  schema-validation:
+    runs-on: ubuntu-latest
+    container: ghcr.io/gammasim/simtools-prod:latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install findutils
+        run: |
+          microdnf install -y findutils
+
+      - name: Validate schema files.
+        run: |
+          for file in $(find schema -name "*.yml"); do
+            echo "Testing schema $file"
+            simtools-validate-file-using-schema \
+              --file_name $file \
+              --log_level DEBUG
+          done
+
+      - name: Validate parameter files.
+        run: |
+          for file in $(find verified_model -name "*.json"); do
+            PARAM=$(basename $file .json)
+            echo "Testing parameter $file"
+            simtools-validate-file-using-schema \
+            --file_name $file \
+            --log_level DEBUG
+          done
+
+      - name: Validate metadata in parameter files.
+        run: |
+          for file in $(find verified_model -name "*.json"); do
+            PARAM=$(basename $file .json)
+            echo "Testing metadata for parameter $file"
+            simtools-validate-file-using-schema \
+              --file_name $file \
+              --validate_metadata \
+              --log_level DEBUG
+          done
