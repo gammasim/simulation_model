@@ -1,6 +1,8 @@
 ---
 name: Parameter file validation
+# Validate schema files against their metaschema.
 # Validate parameter files against their schema.
+# This workflow is to support developers.
 
 on:
   push:
