@@ -7,9 +7,9 @@ meta_schema_url: https://raw.githubusercontent.com/gammasim/simtools/main/simtoo
 meta_schema_version: 0.1.0
 name: corsika_observation_level
 description: |-
-  Observation level above see level assumed in the air-shower code.
+  Observation altitude above see level assumed in the air-shower code.
   This should be lower than the altitude of the lowest array element.
-short_description: Observation level above see level assumed in the air-shower code.
+short_description: Observation altitude above see level assumed in the air-shower code.
 data:
   - type: double
     units: m

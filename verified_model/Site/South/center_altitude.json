@@ -1,5 +1,5 @@
 {
-    "Value": 2157.0,
+    "Value": 2162.0,
     "units": "m",
     "Type": "numpy.float64",
     "File": false,
@@ -15,8 +15,8 @@
             },
             "PRODUCT": {
                 "DESCRIPTION": "Altitude above sea level of site centre.",
-                "CREATION_TIME": null,
-                "ID": null,
+                "CREATION_TIME": "2024-01-11T08:16:11",
+                "ID": "dae92e45-f16a-4a2e-b5fd-ed2605a03303",
                 "DATA": {
                     "CATEGORY": "CAL",
                     "ASSOCIATION": "Subarray",
@@ -33,24 +33,24 @@
                     "START": null,
                     "END": null
                 },
-                "FILENAME": null
+                "FILENAME": "center_altitude.json"
             },
             "INSTRUMENT": {
                 "SITE": "CTAO-South",
-                "CLASS": null,
-                "TYPE": null,
+                "CLASS": "Site",
+                "TYPE": "Observatory",
                 "SUBTYPE": null,
                 "ID": null,
                 "DESCRIPTION": null
             },
             "PROCESS": {
-                "TYPE": null,
-                "SUBTYPE": null,
+                "TYPE": "simulation",
+                "SUBTYPE": "simulation model parameter",
                 "ID": null
             },
             "ACTIVITY": {
-                "NAME": null,
-                "TYPE": null,
+                "NAME": "manual entry",
+                "TYPE": "user",
                 "ID": null,
                 "SOFTWARE": {
                     "NAME": null,
