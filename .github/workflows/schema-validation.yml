@@ -1,6 +1,7 @@
 ---
 name: Schema file validation
 # Validate schema files against their metaschema.
+# This workflow is to support developers.
 
 on:
   push:
@@ -23,7 +24,7 @@ jobs:
         run: |
           microdnf install -y findutils
 
-      - name: linter
+      - name: Linter
         run: |
           pip install yamllint
           yamllint schema/*.yml
