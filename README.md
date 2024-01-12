@@ -18,13 +18,13 @@ Parameters which are validated can be submitted to the simulation model database
 A typical model files includes:
 
 ```yaml
-Value:
-Type:
+value:
+type:
 units:
-Metadata: { }
+metadata: { }
 ```
 
-The `Value` field contains the actual value of the parameter or points towards a data file (e.g., an astropy table in ecsv format).
+The `value` field contains the actual value of the parameter or points towards a data file (e.g., an astropy table in ecsv format).
 (The inclusion of the unit and type in the model file is still under discussion since it is technically part of the schema and does not have to be included here explicitly.)
 
 ### Subdivision of model files for telescope types and sites
