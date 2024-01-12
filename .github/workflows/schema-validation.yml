@@ -1,7 +1,6 @@
 ---
-name: Parameter file validation
+name: Schema file validation
 # Validate schema files against their metaschema.
-# Validate parameter files against their schema.
 # This workflow is to support developers.
 
 on:
@@ -25,32 +24,16 @@ jobs:
         run: |
           microdnf install -y findutils
 
+      - name: Linter
+        run: |
+          pip install yamllint
+          yamllint -d "{rules: {line-length: {max: 150}}}" schema/*.yml
+
       - name: Validate schema files.
         run: |
-          for file in $(find schema -name "*.yml"); do
+          for file in schema/*.yml; do
             echo "Testing schema $file"
             simtools-validate-file-using-schema \
-              --file_name $file \
-              --log_level DEBUG
-          done
-
-      - name: Validate parameter files.
-        run: |
-          for file in $(find verified_model -name "*.json"); do
-            PARAM=$(basename $file .json)
-            echo "Testing parameter $file"
-            simtools-validate-file-using-schema \
-            --file_name $file \
-            --log_level DEBUG
-          done
-
-      - name: Validate metadata in parameter files.
-        run: |
-          for file in $(find verified_model -name "*.json"); do
-            PARAM=$(basename $file .json)
-            echo "Testing metadata for parameter $file"
-            simtools-validate-file-using-schema \
-              --file_name $file \
-              --validate_metadata \
+              --file_name "$file" \
               --log_level DEBUG
           done

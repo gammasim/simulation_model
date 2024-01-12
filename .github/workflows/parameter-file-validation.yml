@@ -1,0 +1,65 @@
+---
+name: Parameter file validation
+# Validate parameter files against their schema.
+# This workflow is to support developers.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  schema-validation:
+    runs-on: ubuntu-latest
+    container: ghcr.io/gammasim/simtools-prod:latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install findutils
+        run: |
+          microdnf install -y findutils
+
+      - name: Current branch
+        run: |
+          if [[ "${{ github.event_name }}" == 'pull_request' ]]; then
+            echo "CURRENT_BRANCH=${GITHUB_HEAD_REF}" >> "$GITHUB_ENV"
+          else
+            echo "CURRENT_BRANCH=${GITHUB_REF#refs/heads/}" >> "$GITHUB_ENV"
+          fi
+
+      - name: Parameter file validation.
+        run: |
+          for model in "verified_model" "validated_model"; do
+            find "$model" -name '*.json' > tmp
+            while IFS= read -r file
+            do
+              echo "Testing parameter $file"
+              # use schema from current branch
+              # (as this branch might have introduced schema changes)
+              sed -i -e "s/main/$CURRENT_BRANCH/" "$file"
+              simtools-validate-file-using-schema \
+              --file_name "$file" \
+              --log_level DEBUG
+            done < tmp
+            rm -f tmp
+          done
+
+      - name: Metadata validation.
+        run: |
+          for model in "verified_model" "validated_model"; do
+            find "$model" -name '*.json' > tmp
+            while IFS= read -r file
+            do
+              echo "Testing parameter $file"
+              simtools-validate-file-using-schema \
+              --file_name "$file" \
+              --validate_metadata \
+              --log_level DEBUG
+            done < tmp
+            rm -f tmp
+          done
