@@ -23,6 +23,11 @@ jobs:
         run: |
           microdnf install -y findutils
 
+      - name: linter
+        run: |
+          pip install yamllint
+          yamllint schema/*.yml
+
       - name: Validate schema files.
         run: |
           for file in schema/*.yml; do
