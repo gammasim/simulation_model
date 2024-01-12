@@ -10,7 +10,7 @@ Reference implementation of CTA simulation model parameters consisting of:
 
 The verified model consists of a set of json or yaml files verified to follow the corresponding schema file. The simtools application `simtools-validate-file-using-schema` is used for the verification.
 
-Validated parameters are used successfully in [simtools](https://github.com/gammasim/simtools) (this needs to be documented). 
+Validated parameters are used successfully in [simtools](https://github.com/gammasim/simtools) (this needs to be documented).
 Parameters which are validated can be submitted to the simulation model database.
 
 ### Implementation
@@ -18,14 +18,13 @@ Parameters which are validated can be submitted to the simulation model database
 A typical model files includes:
 
 ```yaml
-value:
-type:
-unit:
-version:
-metadata: { }
+Value:
+Type:
+units:
+Metadata: { }
 ```
 
-The `value` field contains the actual value of the parameter or points towards a data file (e.g., an astropy table in ecsv format).
+The `Value` field contains the actual value of the parameter or points towards a data file (e.g., an astropy table in ecsv format).
 (The inclusion of the unit and type in the model file is still under discussion since it is technically part of the schema and does not have to be included here explicitly.)
 
 ### Subdivision of model files for telescope types and sites
@@ -51,7 +50,7 @@ The following example is for a single parameter description.
 title: Schema for num_gains model parameter
 version: 0.1.0
 base_schema: simpipe-schema
-base_schema_url: https://github.com/gammasim/workflows/schema/jsonschema.yml
+base_schema_url:https://raw.githubusercontent.com/gammasim/simtools/main/simtools/schemas/data.metaschema.yml
 base_schema_version: 0.1.0
 name: num_gains
 description: Number of different gains the input signal gets digitized.
@@ -155,4 +154,11 @@ Describes the source of the data or parameter (e.g., *Calibration*)
 ### Simulation software description
 
 Describes the simulation software (e.g., *sim_telarray* or *corsika*) the parameter is used for.
+For some parameters, different names are used in the different software packages (e.g. `corsika_observation_level` is `OBSLEVEL` in CORSIKA).
+In this case, the 'parameter_name' field documents this mapping:
 
+```yaml
+simulation_software:
+  - name: corsika
+    parameter_name: OBSLEV
+```
