@@ -24,6 +24,15 @@ jobs:
         run: |
           microdnf install -y findutils
 
+      - name: Current branch
+        run: |
+          if [[ "${{ github.event_name }}" == 'pull_request' ]]; then
+            echo "CURRENT_BRANCH=${GITHUB_HEAD_REF}" >> "$GITHUB_ENV"
+          else
+            echo "CURRENT_BRANCH=${GITHUB_REF#refs/heads/}" >> "$GITHUB_ENV"
+          fi
+          echo "Current branch $CURRENT_BRANCH"
+
       - name: Parameter file validation.
         run: |
           for model in "verified_model" "validated_model"; do
@@ -33,7 +42,6 @@ jobs:
               echo "Testing parameter $file"
               # use schema from current branch
               # (as this branch might have introduced schema changes)
-              CURRENT_BRANCH=${GITHUB_REF#refs/heads/}
               sed -i "" "s/main/$CURRENT_BRANCH/" "$file"
               cat "$file"
               simtools-validate-file-using-schema \
