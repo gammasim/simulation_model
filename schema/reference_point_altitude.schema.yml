@@ -1,14 +1,15 @@
 %YAML 1.2
 ---
-title: Schema for center_altitude model parameter
+title: Schema for reference_point_altitude model parameter
 version: 0.1.0
 meta_schema: simpipe-schema
 meta_schema_url: https://raw.githubusercontent.com/gammasim/simtools/main/simtools/schemas/data.metaschema.yml
 meta_schema_version: 0.1.0
-name: center_altitude
+name: reference_point_altitude
 description: |-
-  Altitude above sea level of central reference point.
-short_description: Altitude above sea level of central reference point.
+  Altitude above sea level of site reference point.
+  This location is typical identical or close to the site center.
+short_description: Altitude above sea level of site reference point.
 data:
   - type: double
     units: m

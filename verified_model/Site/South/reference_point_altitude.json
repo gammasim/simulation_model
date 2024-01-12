@@ -23,9 +23,9 @@
                     "LEVEL": "R1",
                     "TYPE": "Service",
                     "MODEL": {
-                        "NAME": "center_altitude",
+                        "NAME": "reference_point_altitude",
                         "VERSION": "0.1.0",
-                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/coordinates/schema/center_altitude.schema.yml"
+                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/main/schema/reference_point_altitude.schema.yml"
                     }
                 },
                 "FORMAT": "json",
@@ -33,7 +33,7 @@
                     "START": null,
                     "END": null
                 },
-                "FILENAME": "center_altitude.json"
+                "FILENAME": "reference_point_altitude.json"
             },
             "INSTRUMENT": {
                 "SITE": "CTAO-South",
