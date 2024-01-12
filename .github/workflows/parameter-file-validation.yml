@@ -33,7 +33,7 @@ jobs:
               echo "Testing parameter $file"
               # use schema from current branch
               # (as this branch might have introduced schema changes)
-              CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+              CURRENT_BRANCH=${GITHUB_REF#refs/heads/}
               sed -i "" "s/main/$CURRENT_BRANCH/" "$file"
               cat "$file"
               simtools-validate-file-using-schema \
