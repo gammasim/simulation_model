@@ -14,7 +14,7 @@
                 "EMAIL": null
             },
             "PRODUCT": {
-                "DESCRIPTION": "Observation altitude above see level assumed in the air-shower code",
+                "DESCRIPTION": "Corsika observation level as used in prod6",
                 "CREATION_TIME": "2024-01-11T08:20:01",
                 "ID": "9ffeb4cc-f864-467e-8845-bd57372df5fe",
                 "DATA": {

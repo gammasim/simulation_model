@@ -14,7 +14,7 @@
                 "EMAIL": null
             },
             "PRODUCT": {
-                "DESCRIPTION": "Altitude above sea level of site centre.",
+                "DESCRIPTION": "Reference point altitude as used in prod6",
                 "CREATION_TIME": "2024-01-11T08:16:11",
                 "ID": "dae92e45-f16a-4a2e-b5fd-ed2605a03303",
                 "DATA": {
