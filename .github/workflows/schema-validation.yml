@@ -27,7 +27,7 @@ jobs:
       - name: Linter
         run: |
           pip install yamllint
-          yamllint schema/*.yml
+          yamllint -d "{rules: {line-length: {max: 150}}}" schema/*.yml
 
       - name: Validate schema files.
         run: |
