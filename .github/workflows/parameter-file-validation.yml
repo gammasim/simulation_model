@@ -42,7 +42,7 @@ jobs:
               echo "Testing parameter $file"
               # use schema from current branch
               # (as this branch might have introduced schema changes)
-              sed -i "" "s/main/$CURRENT_BRANCH/" "$file"
+              sed -i -e "s/main/$CURRENT_BRANCH/" "$file"
               cat "$file"
               simtools-validate-file-using-schema \
               --file_name "$file" \
