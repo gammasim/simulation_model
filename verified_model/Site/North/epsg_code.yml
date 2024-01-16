@@ -1,5 +1,5 @@
 {
-    "value": 32719,
+    "value": 32628,
     "type": "int",
     "file": false,
     "metadata": {
@@ -22,9 +22,9 @@
                     "LEVEL": "R1",
                     "TYPE": "Service",
                     "MODEL": {
-                        "NAME": "eps_code",
+                        "NAME": "epsg_code",
                         "VERSION": "0.1.0",
-                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/main/schema/eps_code.schema.yml"
+                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/main/schema/epsg_code.schema.yml"
                     }
                 },
                 "FORMAT": "json",
@@ -32,10 +32,10 @@
                     "START": null,
                     "END": null
                 },
-                "FILENAME": "eps_code.json"
+                "FILENAME": "epsg_code.json"
             },
             "INSTRUMENT": {
-                "SITE": "CTAO-South",
+                "SITE": "CTAO-North",
                 "CLASS": "Site",
                 "TYPE": "Observatory",
                 "SUBTYPE": null,
@@ -62,10 +62,10 @@
                 "DOCUMENT": [
                     {
                         "TYPE": "EXTERNAL-WEBSITE",
-                        "TITLE": "EPSG:32718",
+                        "TITLE": "EPSG:32628",
                         "ID": null,
                         "CREATION_TIME": null,
-                        "URL": "https://epsg.io/32719",
+                        "URL": "https://epsg.io/32628"
                     }
                 ]
             }
