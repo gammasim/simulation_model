@@ -36,7 +36,7 @@
                 "FILENAME": "reference_point_latitude.json"
             },
             "INSTRUMENT": {
-                "SITE": "CTAO-South",
+                "SITE": "CTA-South",
                 "CLASS": "Site",
                 "TYPE": "Observatory",
                 "SUBTYPE": null,

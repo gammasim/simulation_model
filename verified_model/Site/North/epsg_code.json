@@ -35,7 +35,7 @@
                 "FILENAME": "epsg_code.json"
             },
             "INSTRUMENT": {
-                "SITE": "CTAO-North",
+                "SITE": "CTA-North",
                 "CLASS": "Site",
                 "TYPE": "Observatory",
                 "SUBTYPE": null,

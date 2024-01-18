@@ -36,7 +36,7 @@
                 "FILENAME": "reference_point_altitude.json"
             },
             "INSTRUMENT": {
-                "SITE": "CTAO-North",
+                "SITE": "CTA-North",
                 "CLASS": "Site",
                 "TYPE": "Observatory",
                 "SUBTYPE": null,

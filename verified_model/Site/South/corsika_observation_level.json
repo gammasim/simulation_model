@@ -36,7 +36,7 @@
                 "FILENAME": "corsika_observation_level.json"
             },
             "INSTRUMENT": {
-                "SITE": "CTAO-South",
+                "SITE": "CTA-South",
                 "CLASS": "Site",
                 "TYPE": "Observatory",
                 "SUBTYPE": null,
