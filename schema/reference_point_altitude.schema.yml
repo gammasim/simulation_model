@@ -8,7 +8,7 @@ meta_schema_version: 0.1.0
 name: reference_point_altitude
 description: |-
   Altitude above sea level of site reference point.
-  This location is typical identical or close to the site center.
+  This location is typically identical or close to the site center.
 short_description: Altitude above sea level of site reference point.
 data:
   - type: double
