@@ -8,7 +8,7 @@ meta_schema_version: 0.1.0
 name: corsika_observation_level
 description: |-
   Observation altitude above see level assumed in the air-shower code.
-  This should be lower than the altitude of the lowest array element.
+  This should be lower than the lowest altitude of any telescope.
 short_description: Observation altitude above see level assumed in the air-shower code.
 data:
   - type: double
