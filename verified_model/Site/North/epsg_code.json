@@ -31,8 +31,7 @@
                 "VALID": {
                     "START": null,
                     "END": null
-                },
-                "FILENAME": "epsg_code.json"
+                }
             },
             "INSTRUMENT": {
                 "SITE": "CTA-North",

@@ -32,8 +32,7 @@
                 "VALID": {
                     "START": null,
                     "END": null
-                },
-                "FILENAME": "corsika_observation_level.json"
+                }
             },
             "INSTRUMENT": {
                 "SITE": "CTA-South",

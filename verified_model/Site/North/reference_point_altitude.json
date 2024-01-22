@@ -32,8 +32,7 @@
                 "VALID": {
                     "START": null,
                     "END": null
-                },
-                "FILENAME": "reference_point_altitude.json"
+                }
             },
             "INSTRUMENT": {
                 "SITE": "CTA-North",
