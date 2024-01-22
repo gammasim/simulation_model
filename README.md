@@ -154,11 +154,8 @@ Describes the source of the data or parameter (e.g., *Calibration*)
 ### Simulation software description
 
 Describes the simulation software (e.g., *sim_telarray* or *corsika*) the parameter is used for.
-For some parameters, different names are used in the different software packages (e.g. `corsika_observation_level` is `OBSLEVEL` in CORSIKA).
-In this case, the 'parameter_name' field documents this mapping:
 
 ```yaml
 simulation_software:
   - name: corsika
-    parameter_name: OBSLEV
 ```

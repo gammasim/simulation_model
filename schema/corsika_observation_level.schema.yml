@@ -33,4 +33,3 @@ source:
   - Initial instrument setup
 simulation_software:
   - name: corsika
-    parameter_name: OBSLEV
