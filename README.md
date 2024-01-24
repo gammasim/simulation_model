@@ -18,13 +18,13 @@ Parameters which are validated can be submitted to the simulation model database
 A typical model files includes:
 
 ```yaml
-Value:
-Type:
+value:
+type:
 units:
-Metadata: { }
+metadata: { }
 ```
 
-The `Value` field contains the actual value of the parameter or points towards a data file (e.g., an astropy table in ecsv format).
+The `value` field contains the actual value of the parameter or points towards a data file (e.g., an astropy table in ecsv format).
 (The inclusion of the unit and type in the model file is still under discussion since it is technically part of the schema and does not have to be included here explicitly.)
 
 ### Subdivision of model files for telescope types and sites
@@ -154,11 +154,8 @@ Describes the source of the data or parameter (e.g., *Calibration*)
 ### Simulation software description
 
 Describes the simulation software (e.g., *sim_telarray* or *corsika*) the parameter is used for.
-For some parameters, different names are used in the different software packages (e.g. `corsika_observation_level` is `OBSLEVEL` in CORSIKA).
-In this case, the 'parameter_name' field documents this mapping:
 
 ```yaml
 simulation_software:
   - name: corsika
-    parameter_name: OBSLEV
 ```
