@@ -1,24 +1,21 @@
 %YAML 1.2
 ---
-title: Schema for epsg_code model parameter
+title: Schema for reference_point_utm_east model parameter
 version: 0.1.0
 meta_schema: simpipe-schema
 meta_schema_url: https://raw.githubusercontent.com/gammasim/simtools/main/simtools/schemas/data.metaschema.yml
 meta_schema_version: 0.1.0
-name: epsg_code
-developer_note: |-
-  Obtained from https://epsg.io/32628 and
-  https://epsg.io/32719
+name: reference_point_utm_east
 description: |-
-  EPSG code to describe geodetic datums, spatial reference
-  system, and Earth ellipsoids at the site.
-short_description: Site EPSG code
+  UTM east of site reference point.
+  Telescope x,y positions are calculated relative to this
+  position.
+short_description: UTM east of site reference point.
 data:
-  - type: int
-    units: dimensionless
+  - type: double
+    units: m
     allowed_range:
-      min: 1024
-      max: 32767
+      min: 0.
 instrument:
   class: Site
   type:

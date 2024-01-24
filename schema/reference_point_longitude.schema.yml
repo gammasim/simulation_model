@@ -7,9 +7,8 @@ meta_schema_url: https://raw.githubusercontent.com/gammasim/simtools/main/simtoo
 meta_schema_version: 0.1.0
 name: ref_longitude
 description: |-
-  Longitude of site reference point.
-  Telescope x,y positions are calculated relative to this
-  position.
+  Longitude coincident with site reference point.
+  Not to be used for coordinate transformations (use UTM coordinates for this).
 short_description: Longitude of site reference point.
 data:
   - type: double
