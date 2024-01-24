@@ -25,7 +25,7 @@
                     "MODEL": {
                         "NAME": "reference_point_utm_east",
                         "VERSION": "0.1.0",
-                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/main/schema/reference_point_utm_east.schema.yml"
+                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/telescope-model/schema/reference_point_utm_east.schema.yml"
                     }
                 },
                 "FORMAT": "json",

@@ -24,7 +24,7 @@
                     "MODEL": {
                         "NAME": "epsg_code",
                         "VERSION": "0.1.0",
-                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/main/schema/epsg_code.schema.yml"
+                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/telescope-model/schema/epsg_code.schema.yml"
                     }
                 },
                 "FORMAT": "json",

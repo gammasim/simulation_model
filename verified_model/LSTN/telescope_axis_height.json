@@ -1,5 +1,5 @@
 {
-    "value": 217608.975,
+    "value": 16.0,
     "units": "m",
     "type": "numpy.float64",
     "file": false,
@@ -14,18 +14,18 @@
                 "EMAIL": null
             },
             "PRODUCT": {
-                "DESCRIPTION": "Reference point UTM east as used in prod6 (TODO - describe how this value is derived)",
-                "CREATION_TIME": "2020-06-28:16:11",
+                "DESCRIPTION": "Height of LST elevation axis above ground level.",
+                "CREATION_TIME": "2024-01-11T08:16:11",
                 "ID": null,
                 "DATA": {
                     "CATEGORY": "CAL",
-                    "ASSOCIATION": "Site",
+                    "ASSOCIATION": "Telescope",
                     "LEVEL": "R1",
                     "TYPE": "Service",
                     "MODEL": {
-                        "NAME": "reference_point_utm_east",
+                        "NAME": "telescope_axis_height",
                         "VERSION": "0.1.0",
-                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/telescope-model/schema/reference_point_utm_east.schema.yml"
+                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/telescope-model/schema/telescope_axis_height.schema.yml"
                     }
                 },
                 "FORMAT": "json",
@@ -36,8 +36,8 @@
             },
             "INSTRUMENT": {
                 "SITE": "CTA-North",
-                "CLASS": "Site",
-                "TYPE": "Observatory",
+                "CLASS": "telescope",
+                "TYPE": "LST",
                 "SUBTYPE": null,
                 "ID": null,
                 "DESCRIPTION": null
@@ -59,13 +59,18 @@
                 "END": null
             },
             "CONTEXT": {
+                "NOTES": [
+                    {
+                       "TEXT": "Agreed in call with LST team 2017, March 31"
+                    }
+                ],
                 "DOCUMENT": [
                     {
                         "TYPE": "CTAO-DOC",
-                        "TITLE": "Layouts of the CTAO Arrays",
-                        "ID": "CTA-SPE-PSC-000000-0001 1c",
-                        "CREATION_TIME": "2022-05-30 12:00:00",
-                        "URL": null
+                        "TITLE": "CTA Monte Carlo Model LST Appendix",
+                        "ID": null,
+                        "CREATION_TIME": "2020-05-04 12:00:00",
+                        "URL": "https://gitlab.cta-observatory.org/cta-science/simulations/simulation-model/verification/verification-process/lst/-/blob/master/Appendix-LST.pdf?ref_type=heads"
                     }
                 ]
             }
