@@ -35,7 +35,7 @@
                 }
             },
             "INSTRUMENT": {
-                "SITE": "CTA-North",
+                "SITE": "CTA-South",
                 "CLASS": "telescope",
                 "TYPE": "LST",
                 "SUBTYPE": null,

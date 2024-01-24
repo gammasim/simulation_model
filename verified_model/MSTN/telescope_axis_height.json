@@ -1,5 +1,5 @@
 {
-    "value": 16.0,
+    "value": 9.0,
     "units": "m",
     "type": "numpy.float64",
     "file": false,
@@ -14,7 +14,7 @@
                 "EMAIL": null
             },
             "PRODUCT": {
-                "DESCRIPTION": "Height of LST elevation axis above ground level.",
+                "DESCRIPTION": "Height of MST elevation axis above ground level.",
                 "CREATION_TIME": "2024-01-11T08:16:11",
                 "ID": null,
                 "DATA": {
@@ -37,7 +37,7 @@
             "INSTRUMENT": {
                 "SITE": "CTA-North",
                 "CLASS": "telescope",
-                "TYPE": "LST",
+                "TYPE": "MST",
                 "SUBTYPE": null,
                 "ID": null,
                 "DESCRIPTION": null
@@ -61,16 +61,16 @@
             "CONTEXT": {
                 "NOTES": [
                     {
-                       "TEXT": "Agreed in call with LST team 2017, March 31"
+                       "TEXT": "Agreed in call with MST team 2022, Feb 28"
                     }
                 ],
                 "DOCUMENT": [
                     {
                         "TYPE": "CTAO-DOC",
-                        "TITLE": "CTA Monte Carlo Model LST Appendix",
+                        "TITLE": "CTA Monte Carlo Model MST-Structure Appendix",
                         "ID": null,
                         "CREATION_TIME": "2020-05-04 12:00:00",
-                        "URL": "https://gitlab.cta-observatory.org/cta-science/simulations/simulation-model/verification/verification-process/lst/-/blob/master/Appendix-LST.pdf"
+                        "URL": "https://gitlab.cta-observatory.org/cta-science/simulations/simulation-model/verification/verification-process/mst-structure/-/blob/master/Appendix-MST-Structure.pdf"
                     }
                 ]
             }
