@@ -18,7 +18,7 @@
                 "ID": null,
                 "DATA": {
                     "CATEGORY": "CAL",
-                    "ASSOCIATION": "Subarray",
+                    "ASSOCIATION": "Site",
                     "LEVEL": "R1",
                     "TYPE": "Service",
                     "MODEL": {

@@ -19,7 +19,7 @@
                 "ID": null,
                 "DATA": {
                     "CATEGORY": "SIM",
-                    "ASSOCIATION": "Subarray",
+                    "ASSOCIATION": "Site",
                     "LEVEL": "R1",
                     "TYPE": "Service",
                     "MODEL": {
