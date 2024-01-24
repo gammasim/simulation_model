@@ -18,7 +18,7 @@
                 "CREATION_TIME": "2024-01-11T08:20:01",
                 "ID": null,
                 "DATA": {
-                    "CATEGORY": "SIM",
+                    "CATEGORY": null,
                     "ASSOCIATION": "Subarray",
                     "LEVEL": "R1",
                     "TYPE": "Service",

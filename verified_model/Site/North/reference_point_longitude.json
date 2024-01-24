@@ -18,7 +18,7 @@
                 "CREATION_TIME": "2020-06-28:16:11",
                 "ID": null,
                 "DATA": {
-                    "CATEGORY": "CAL",
+                    "CATEGORY": null,
                     "ASSOCIATION": "Subarray",
                     "LEVEL": "R1",
                     "TYPE": "Service",
