@@ -1,5 +1,5 @@
 {
-    "value": 9,
+    "value": 6.9,
     "units": "m",
     "type": "numpy.float64",
     "file": false,
@@ -61,7 +61,7 @@
             "CONTEXT": {
                 "NOTES": [
                     {
-                       "TEXT": "(?) Agreed in call with SCT team 2022 (?)"
+                       "TEXT": "Derived from SCT drawings from Sep 2013 (see email by KB)"
                     }
                 ],
                 "DOCUMENT": [
@@ -71,6 +71,13 @@
                         "ID": null,
                         "CREATION_TIME": "2023-02-02 12:00:00",
                         "URL": "https://gitlab.cta-observatory.org/cta-science/simulations/simulation-model/verification/verification-process/sct/-/blob/master/Appendix-SCT.pdf"
+                    },
+                    {
+                        "TYPE": "Simulation code, coordinate transformation scripts",
+                        "TITLE": "prod6_coords_trafo_S.sh",
+                        "ID": null,
+                        "CREATION_TIME": "2023-09-27 12:00:00",
+                        "URL": "https://www.mpi-hd.mpg.de/hfm/CTA/MC/Prod6/Layout/prod6_coords_trafo_S.sh"
                     }
                 ]
             }
