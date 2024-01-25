@@ -1,0 +1,86 @@
+{
+    "value": 7.15,
+    "units": "m",
+    "type": "numpy.float64",
+    "file": false,
+    "metadata": {
+        "CTA": {
+            "REFERENCE": {
+                "VERSION": "1.0.0"
+            },
+            "CONTACT": {
+                "ORGANIZATION": "CTAO",
+                "NAME": "CTAO Simulation Team",
+                "EMAIL": null
+            },
+            "PRODUCT": {
+                "DESCRIPTION": "SCT telescope fiducial sphere radius",
+                "CREATION_TIME": "2024-01-11T08:16:11",
+                "ID": null,
+                "DATA": {
+                    "CATEGORY": null,
+                    "ASSOCIATION": "Telescope",
+                    "LEVEL": "R1",
+                    "TYPE": "Service",
+                    "MODEL": {
+                        "NAME": "telescope_sphere_radius",
+                        "VERSION": "0.1.0",
+                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/telescope-model/schema/telescope_sphere_radius.schema.yml"
+                    }
+                },
+                "FORMAT": "json",
+                "VALID": {
+                    "START": null,
+                    "END": null
+                }
+            },
+            "INSTRUMENT": {
+                "SITE": "CTA-South",
+                "CLASS": "telescope",
+                "TYPE": "SCT",
+                "SUBTYPE": null,
+                "ID": null,
+                "DESCRIPTION": null
+            },
+            "PROCESS": {
+                "TYPE": "simulation",
+                "SUBTYPE": "simulation model parameter",
+                "ID": null
+            },
+            "ACTIVITY": {
+                "NAME": "manual entry",
+                "TYPE": "user",
+                "ID": null,
+                "SOFTWARE": {
+                    "NAME": null,
+                    "VERSION": null
+                },
+                "START": null,
+                "END": null
+            },
+            "CONTEXT": {
+                "NOTES": [
+                    {
+                       "TEXT": "Derived from SCT drawings from Sep 2013 (see email by KB)"
+                    }
+                ],
+                "DOCUMENT": [
+                    {
+                        "TYPE": "CTAO-DOC",
+                        "TITLE": "CTA Monte Carlo Model SCT-Structure Appendix",
+                        "ID": null,
+                        "CREATION_TIME": "2023-02-02 12:00:00",
+                        "URL": "https://gitlab.cta-observatory.org/cta-science/simulations/simulation-model/verification/verification-process/sct/-/blob/master/Appendix-SCT.pdf"
+                    },
+                    {
+                        "TYPE": "Simulation code, coordinate transformation scripts",
+                        "TITLE": "prod6_coords_trafo_S.sh",
+                        "ID": null,
+                        "CREATION_TIME": "2023-09-27 12:00:00",
+                        "URL": "https://www.mpi-hd.mpg.de/hfm/CTA/MC/Prod6/Layout/prod6_coords_trafo_S.sh"
+                    }
+                ]
+            }
+        }
+    }
+}
