@@ -1,4 +1,8 @@
 {
+    "parameter_name": "reference_point_utm_north",
+    "instrument": "North",
+    "site": "North",
+    "version": "2024-02-01",
     "value": 3185067.275,
     "units": "m",
     "type": "numpy.float64",

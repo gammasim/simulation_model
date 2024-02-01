@@ -1,4 +1,8 @@
 {
+    "parameter_name": "telescope_axis_height",
+    "instrument": "LSTN-01",
+    "site": "North",
+    "version": "2024-02-01",
     "value": 16.0,
     "units": "m",
     "type": "numpy.float64",
@@ -61,7 +65,7 @@
             "CONTEXT": {
                 "NOTES": [
                     {
-                       "TEXT": "Agreed in call with LST team 2017, March 31"
+                        "TEXT": "Agreed in call with LST team 2017, March 31"
                     }
                 ],
                 "DOCUMENT": [

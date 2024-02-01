@@ -1,4 +1,8 @@
 {
+    "parameter_name": "telescope_sphere_radius",
+    "instrument": "MSTN-design",
+    "site": "North",
+    "version": "2024-02-01",
     "value": 9.15,
     "units": "m",
     "type": "numpy.float64",
@@ -61,7 +65,7 @@
             "CONTEXT": {
                 "NOTES": [
                     {
-                       "TEXT": "Agreed in call with MST team 2022, Feb 28"
+                        "TEXT": "Agreed in call with MST team 2022, Feb 28"
                     }
                 ],
                 "DOCUMENT": [

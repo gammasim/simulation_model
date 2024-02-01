@@ -1,4 +1,8 @@
 {
+    "parameter_name": "epsg_code",
+    "instrument": "North",
+    "site": "North",
+    "version": "2024-02-01",
     "value": 32628,
     "type": "int",
     "file": false,

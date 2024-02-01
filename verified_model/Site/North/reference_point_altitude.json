@@ -1,4 +1,8 @@
 {
+    "parameter_name": "reference_point_altitude",
+    "instrument": "North",
+    "site": "North",
+    "version": "2024-02-01",
     "value": 2177.0,
     "units": "m",
     "type": "numpy.float64",

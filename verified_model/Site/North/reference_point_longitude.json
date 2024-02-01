@@ -1,4 +1,8 @@
 {
+    "parameter_name": "reference_point_longitude",
+    "instrument": "North",
+    "site": "North",
+    "version": "2024-02-01",
     "value": -17.891571,
     "units": "deg",
     "type": "numpy.float64",

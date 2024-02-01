@@ -1,4 +1,8 @@
 {
+    "parameter_name": "reference_point_latitude",
+    "instrument": "South",
+    "site": "South",
+    "version": "2024-02-01",
     "value": -24.683429,
     "units": "deg",
     "type": "numpy.float64",

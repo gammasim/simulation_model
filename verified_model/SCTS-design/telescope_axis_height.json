@@ -1,4 +1,8 @@
 {
+    "parameter_name": "telescope_axis_height",
+    "instrument": "SCTS-design",
+    "site": "South",
+    "version": "2024-02-01",
     "value": 6.9,
     "units": "m",
     "type": "numpy.float64",
@@ -61,7 +65,7 @@
             "CONTEXT": {
                 "NOTES": [
                     {
-                       "TEXT": "Derived from SCT drawings from Sep 2013 (see email by KB)"
+                        "TEXT": "Derived from SCT drawings from Sep 2013 (see email by KB)"
                     }
                 ],
                 "DOCUMENT": [
