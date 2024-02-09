@@ -1,0 +1,30 @@
+%YAML 1.2
+---
+title: Schema for atmosphere_code model parameter
+version: 0.1.0
+meta_schema: simpipe-schema
+meta_schema_url: https://raw.githubusercontent.com/gammasim/simtools/main/simtools/schemas/data.metaschema.yml
+meta_schema_version: 0.1.0
+name: atmosphere_code
+description: |-
+  Code to identify tabulated atmospheric models (as used in CORSIKA).
+short_description: CORSIKA code for atmospheric models
+data:
+  - type: int
+    units: dimensionless
+instrument:
+  class: Site
+  type:
+    - Observatory
+  site:
+    - North
+    - South
+activity:
+  setting:
+    - SetParameterFromExternal
+    - SetArrayElementCoordinates
+  validation:
+    - ValidateParameterByExpert
+    - ValidateArrayElementCoordinates
+source:
+  - Initial instrument setup
