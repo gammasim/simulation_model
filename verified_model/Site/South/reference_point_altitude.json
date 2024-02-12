@@ -1,5 +1,5 @@
 {
-    "parameter_name": "reference_point_altitude",
+    "parameter": "reference_point_altitude",
     "instrument": "South",
     "site": "South",
     "version": "2024-02-01",

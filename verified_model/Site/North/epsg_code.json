@@ -1,5 +1,5 @@
 {
-    "parameter_name": "epsg_code",
+    "parameter": "epsg_code",
     "instrument": "North",
     "site": "North",
     "version": "2024-02-01",

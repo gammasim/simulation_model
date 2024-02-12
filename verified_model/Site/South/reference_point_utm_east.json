@@ -1,5 +1,5 @@
 {
-    "parameter_name": "reference_point_utm_east",
+    "parameter": "reference_point_utm_east",
     "instrument": "South",
     "site": "South",
     "version": "2024-02-01",

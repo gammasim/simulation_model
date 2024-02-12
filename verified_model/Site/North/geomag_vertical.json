@@ -1,5 +1,5 @@
 {
-    "parameter_name": "geomag_vertical",
+    "parameter": "geomag_vertical",
     "instrument": "North",
     "site": "North",
     "version": "2024-02-01",

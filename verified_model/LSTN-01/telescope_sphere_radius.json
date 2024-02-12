@@ -1,5 +1,5 @@
 {
-    "parameter_name": "telescope_sphere_radius",
+    "parameter": "telescope_sphere_radius",
     "instrument": "LSTN-01",
     "site": "North",
     "version": "2024-02-01",

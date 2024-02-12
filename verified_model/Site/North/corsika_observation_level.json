@@ -1,5 +1,5 @@
 {
-    "parameter_name": "corsika_observation_level",
+    "parameter": "corsika_observation_level",
     "instrument": "North",
     "site": "North",
     "version": "2024-02-01",

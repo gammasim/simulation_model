@@ -1,5 +1,5 @@
 {
-    "parameter_name": "telescope_axis_height",
+    "parameter": "telescope_axis_height",
     "instrument": "LSTN-01",
     "site": "North",
     "version": "2024-02-01",

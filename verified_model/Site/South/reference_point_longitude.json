@@ -1,5 +1,5 @@
 {
-    "parameter_name": "reference_point_longitude",
+    "parameter": "reference_point_longitude",
     "instrument": "South",
     "site": "South",
     "version": "2024-02-01",

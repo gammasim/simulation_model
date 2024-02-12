@@ -1,5 +1,5 @@
 {
-    "parameter_name": "reference_point_latitude",
+    "parameter": "reference_point_latitude",
     "instrument": "North",
     "site": "North",
     "version": "2024-02-01",
