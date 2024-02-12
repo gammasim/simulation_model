@@ -1,0 +1,10 @@
+{
+    "parameter_name": "geomag_vertical",
+    "instrument": "South",
+    "site": "South",
+    "version": "2024-02-01",
+    "value": -9.367,
+    "units": "uT",
+    "type": "numpy.float64",
+    "file": false
+}
