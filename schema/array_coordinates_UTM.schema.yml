@@ -7,7 +7,9 @@ meta_schema_url: https://raw.githubusercontent.com/gammasim/simtools/main/simtoo
 meta_schema_version: 0.1.0
 name: array_coordinates_utm
 description: |-
-  Array elements (e.g., telescope positions) in UTM coordinates.
+  Array element positions (e.g., telescope positions) in UTM coordinates.
+developer_note: |-
+  Use NaN for missing values.
 data:
   - type: datatable
     table_columns:
