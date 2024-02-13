@@ -19,21 +19,21 @@ data:
           (relative to the centre of the array).
         type: double
         required: true
-        units: m
+        unit: m
       - name: position_y
         description: |-
           array element y position towards geographic West
           (relative to the centre of the array).
         type: double
         required: true
-        units: m
+        unit: m
       - name: position_z
         description: |-
           array element z position
           (relative to site centre `reference_point_altitude`).
         type: double
         required: true
-        units: m
+        unit: m
         allowed_range:
           min: 0.0
 instrument:

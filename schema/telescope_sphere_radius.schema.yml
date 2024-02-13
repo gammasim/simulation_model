@@ -14,7 +14,7 @@ description: |-
 short_description: Telescope fiducial sphere radius.
 data:
   - type: double
-    units: m
+    unit: m
 instrument:
   class: Structure
   type:

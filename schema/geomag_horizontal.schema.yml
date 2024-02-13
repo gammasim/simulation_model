@@ -12,7 +12,7 @@ description: |-
    field at given site
 data:
   - type: double
-    units: uT
+    unit: uT
     description: horizontal geomagnetic field component (H).
 instrument:
   class: Site

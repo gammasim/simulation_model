@@ -12,7 +12,7 @@ description: |-
 short_description: Altitude above sea level of site reference point.
 data:
   - type: double
-    units: m
+    unit: m
     allowed_range:
       min: 0.0
 instrument:

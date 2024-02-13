@@ -9,7 +9,7 @@ name: telescope_axis_height
 description: Height of telescope elevation axis above ground level.
 data:
   - type: double
-    units: m
+    unit: m
 instrument:
   class: Structure
   type:

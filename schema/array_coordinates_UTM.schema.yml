@@ -18,19 +18,19 @@ data:
           Asset code of the array element.
         type: string
         required: true
-        units: dimensionless
+        unit: dimensionless
       - name: sequence_number
         description: |-
           Sequence number of the array element.
         type: string
         required: true
-        units: dimensionless
+        unit: dimensionless
       - name: utm_east
         description: |-
           UTM East coordinate of the array element.
         type: double
         required: true
-        units: m
+        unit: m
         input_processing:
           - allow_nan
       - name: utm_north
@@ -38,7 +38,7 @@ data:
           UTM North coordinate of the array element.
         type: double
         required: true
-        units: m
+        unit: m
         input_processing:
           - allow_nan
       - name: altitude
@@ -46,7 +46,7 @@ data:
           Altitude of the array element.
         required: true
         type: double
-        units: m
+        unit: m
         allowed_range:
           min: 0.
         input_processing:
@@ -56,7 +56,7 @@ data:
           Geographic code of the array element.
         type: string
         required: false
-        units: dimensionless
+        unit: dimensionless
 instrument:
   class: Site
   type:

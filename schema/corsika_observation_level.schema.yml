@@ -12,7 +12,7 @@ description: |-
 short_description: Observation altitude above see level assumed in the air-shower code.
 data:
   - type: double
-    units: m
+    unit: m
     allowed_range:
       min: 0.0
 instrument:

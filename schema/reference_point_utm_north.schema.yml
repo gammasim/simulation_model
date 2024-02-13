@@ -13,7 +13,7 @@ description: |-
 short_description: UTM north of site reference point.
 data:
   - type: double
-    units: m
+    unit: m
     allowed_range:
       min: 0.
 instrument:

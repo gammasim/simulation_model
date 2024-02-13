@@ -9,7 +9,7 @@ name: num_gains
 description: Number of different gains the input signal gets digitized.
 data:
   - type: int
-    units: dimensionless
+    unit: dimensionless
     default: 1
     allowed_range:
       min: 1

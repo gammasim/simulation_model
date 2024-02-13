@@ -11,7 +11,7 @@ description: |-
    Rotation angle between geographic South and geomagnetic North direction.
 data:
   - type: double
-    units: deg
+    unit: deg
     description: |-
       rotation angle of x-axis relative to geomagnetic north
       (corresponds to CORSIKA ARRANG parameter)

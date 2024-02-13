@@ -12,7 +12,7 @@ description: |-
    field at given site
 data:
   - type: double
-    units: uT
+    unit: uT
     description: vertical geomagnetic field component (Z).
 instrument:
   class: Site
