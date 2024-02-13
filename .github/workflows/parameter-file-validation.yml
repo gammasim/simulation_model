@@ -42,7 +42,7 @@ jobs:
               schema_file="./schema/$(basename $file .json).schema.yml"
               simtools-validate-file-using-schema \
               --file_name "$file" \
-              --schema_file "$schema_file" \
+              --schema "$schema_file" \
               --log_level DEBUG
             done < tmp
             rm -f tmp
