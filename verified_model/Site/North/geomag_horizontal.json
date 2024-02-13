@@ -4,7 +4,7 @@
     "site": "North",
     "version": "2024-02-01",
     "value": 30.909,
-    "units": "uT",
+    "unit": "uT",
     "type": "numpy.float64",
     "file": false
 }

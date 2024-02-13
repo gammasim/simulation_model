@@ -4,7 +4,7 @@
     "site": "North",
     "version": "2024-02-01",
     "value": -17.891571,
-    "units": "deg",
+    "unit": "deg",
     "type": "numpy.float64",
     "file": false
 }
