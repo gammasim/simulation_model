@@ -5,5 +5,6 @@
     "version": "2024-02-01",
     "value": 32628,
     "type": "int",
+    "applicable": true,
     "file": false
 }

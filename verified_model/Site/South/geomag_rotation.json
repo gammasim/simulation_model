@@ -6,5 +6,6 @@
     "value": -4.533,
     "unit": "deg",
     "type": "numpy.float64",
+    "applicable": true,
     "file": false
 }

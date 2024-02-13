@@ -6,5 +6,6 @@
     "value": 2177.0,
     "unit": "m",
     "type": "numpy.float64",
+    "applicable": true,
     "file": false
 }

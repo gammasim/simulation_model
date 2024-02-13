@@ -6,5 +6,6 @@
     "value": -9.367,
     "unit": "uT",
     "type": "numpy.float64",
+    "applicable": true,
     "file": false
 }
