@@ -1,0 +1,56 @@
+%YAML 1.2
+---
+title: Schema for array_coordinates model parameter
+version: 0.1.0
+meta_schema: simpipe-schema
+meta_schema_url: https://raw.githubusercontent.com/gammasim/simtools/main/simtools/schemas/data.metaschema.yml
+meta_schema_version: 0.1.0
+name: array_coordinates
+description: |-
+  Array element positions (e.g., telescope positions) in ground coordinates.
+developer_note: |-
+  Use NaN for missing values.
+data:
+  - type: datatable
+    table_columns:
+      - name: position_x
+        description: |-
+          array element x position towards geographic North
+          (relative to the centre of the array).
+        type: double
+        required: true
+        unit: m
+      - name: position_y
+        description: |-
+          array element y position towards geographic West
+          (relative to the centre of the array).
+        type: double
+        required: true
+        unit: m
+      - name: position_z
+        description: |-
+          array element z position
+          (relative to site centre `reference_point_altitude`).
+        type: double
+        required: true
+        unit: m
+        allowed_range:
+          min: 0.0
+instrument:
+  class: Site
+  type:
+    - Observatory
+  site:
+    - North
+    - South
+activity:
+  setting:
+    - SetParameterFromExternal
+    - SetArrayElementCoordinates
+  validation:
+    - ValidateParameterByExpert
+    - ValidateArrayElementCoordinates
+source:
+  - Initial instrument setup
+simulation_software:
+  - name: corsika

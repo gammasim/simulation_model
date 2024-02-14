@@ -1,74 +1,11 @@
 {
+    "parameter": "corsika_observation_level",
+    "instrument": "North",
+    "site": "North",
+    "version": "2024-02-01",
     "value": 2156.0,
-    "units": "m",
+    "unit": "m",
     "type": "numpy.float64",
-    "file": false,
-    "metadata": {
-        "CTA": {
-            "REFERENCE": {
-                "VERSION": "1.0.0"
-            },
-            "CONTACT": {
-                "ORGANIZATION": "CTAO",
-                "NAME": "CTAO Simulation Team",
-                "EMAIL": null
-            },
-            "PRODUCT": {
-                "DESCRIPTION": "Corsika observation level as used in prod6",
-                "CREATION_TIME": "2024-01-11T08:20:01",
-                "ID": null,
-                "DATA": {
-                    "CATEGORY": null,
-                    "ASSOCIATION": "Subarray",
-                    "LEVEL": "R1",
-                    "TYPE": "Service",
-                    "MODEL": {
-                        "NAME": "corsika_observation_level",
-                        "VERSION": "0.1.0",
-                        "URL": "https://raw.githubusercontent.com/gammasim/simulation_model/main/schema/corsika_observation_level.schema.yml"
-                    }
-                },
-                "FORMAT": "json",
-                "VALID": {
-                    "START": null,
-                    "END": null
-                }
-            },
-            "INSTRUMENT": {
-                "SITE": "CTA-North",
-                "CLASS": "Site",
-                "TYPE": "Observatory",
-                "SUBTYPE": null,
-                "ID": null,
-                "DESCRIPTION": null
-            },
-            "PROCESS": {
-                "TYPE": "simulation",
-                "SUBTYPE": "simulation model parameter",
-                "ID": null
-            },
-            "ACTIVITY": {
-                "NAME": "manual entry",
-                "TYPE": "user",
-                "ID": null,
-                "SOFTWARE": {
-                    "NAME": null,
-                    "VERSION": null
-                },
-                "START": null,
-                "END": null
-            },
-            "CONTEXT": {
-                "DOCUMENT": [
-                    {
-                        "TYPE": "CTAO-GITLAB",
-                        "TITLE": "Layouts gitlab",
-                        "ID": null,
-                        "CREATION_TIME": null,
-                        "URL": "https://gitlab.cta-observatory.org/cta-science/simulations/simulation-and-performance-parallel-mode/layout-optimisation/layouts"
-                    }
-                ]
-            }
-        }
-    }
+    "applicable": true,
+    "file": false
 }

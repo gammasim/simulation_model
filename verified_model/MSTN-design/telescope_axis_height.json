@@ -1,10 +1,10 @@
 {
-    "parameter": "reference_point_longitude",
-    "instrument": "North",
+    "parameter": "telescope_axis_height",
+    "instrument": "MSTN-design",
     "site": "North",
     "version": "2024-02-01",
-    "value": -17.891571,
-    "unit": "deg",
+    "value": 9.0,
+    "unit": "m",
     "type": "numpy.float64",
     "applicable": true,
     "file": false

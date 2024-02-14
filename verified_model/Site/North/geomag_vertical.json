@@ -1,10 +1,10 @@
 {
-    "parameter": "reference_point_longitude",
+    "parameter": "geomag_vertical",
     "instrument": "North",
     "site": "North",
     "version": "2024-02-01",
-    "value": -17.891571,
-    "unit": "deg",
+    "value": 23.409,
+    "unit": "uT",
     "type": "numpy.float64",
     "applicable": true,
     "file": false

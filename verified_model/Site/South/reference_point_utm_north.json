@@ -1,9 +1,9 @@
 {
-    "parameter": "corsika_observation_level",
+    "parameter": "reference_point_utm_north",
     "instrument": "South",
     "site": "South",
     "version": "2024-02-01",
-    "value": 2147.0,
+    "value": 7269466,
     "unit": "m",
     "type": "numpy.float64",
     "applicable": true,

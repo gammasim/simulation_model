@@ -1,10 +1,10 @@
 {
-    "parameter": "reference_point_longitude",
+    "parameter": "reference_point_utm_north",
     "instrument": "North",
     "site": "North",
     "version": "2024-02-01",
-    "value": -17.891571,
-    "unit": "deg",
+    "value": 3185067.275,
+    "unit": "m",
     "type": "numpy.float64",
     "applicable": true,
     "file": false

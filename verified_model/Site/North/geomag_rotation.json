@@ -1,9 +1,9 @@
 {
-    "parameter": "reference_point_longitude",
-    "instrument": "North",
-    "site": "North",
+    "parameter": "geomag_rotation",
+    "instrument": "South",
+    "site": "South",
     "version": "2024-02-01",
-    "value": -17.891571,
+    "value": -4.3167,
     "unit": "deg",
     "type": "numpy.float64",
     "applicable": true,

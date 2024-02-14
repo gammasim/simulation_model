@@ -1,9 +1,9 @@
 {
-    "parameter": "corsika_observation_level",
-    "instrument": "South",
+    "parameter": "telescope_sphere_radius",
+    "instrument": "SSTS-design",
     "site": "South",
     "version": "2024-02-01",
-    "value": 2147.0,
+    "value": 3.0,
     "unit": "m",
     "type": "numpy.float64",
     "applicable": true,
