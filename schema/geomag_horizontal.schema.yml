@@ -9,11 +9,10 @@ name: geomag_horizontal
 short_description: Horizontal component of geomagnetic field.
 description: |-
    Horizontal component in direction of magnetic North of the geomagnetic
-   field at given site
+   field at given site.
 data:
   - type: double
     unit: uT
-    description: horizontal geomagnetic field component (H).
 instrument:
   class: Site
   type:

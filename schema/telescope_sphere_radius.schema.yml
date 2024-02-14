@@ -18,10 +18,12 @@ data:
 instrument:
   class: Structure
   type:
-    - LSTStructure
-    - MSTStructure
-    - SSTStructure
-    - SCTStructure
+    - LSTN
+    - LSTS
+    - MSTN
+    - MSTS
+    - SSTS
+    - SCTS
 activity:
   setting:
     - SetParameterFromExternal

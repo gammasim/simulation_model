@@ -9,11 +9,10 @@ name: geomag_vertical
 short_description: Vertical component of geomagnetic field.
 description: |-
    Vertical component in downwards direction of the geomagnetic
-   field at given site
+   field at given site.
 data:
   - type: double
     unit: uT
-    description: vertical geomagnetic field component (Z).
 instrument:
   class: Site
   type:

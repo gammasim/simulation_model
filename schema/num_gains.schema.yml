@@ -17,11 +17,12 @@ data:
 instrument:
   class: Camera
   type:
-    - LSTCam
-    - FlashCam
-    - NectarCam
-    - SSTCam
-    - SCTCam
+    - LSTN
+    - LSTS
+    - MSTN
+    - MSTS
+    - SSTS
+    - SCTS
 activity:
   setting:
     - SetParameterFromExternal
